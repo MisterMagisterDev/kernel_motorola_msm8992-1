@@ -1313,6 +1313,7 @@ static int direct_splice_actor(struct pipe_inode_info *pipe,
 	return do_splice_from(pipe, file, sd->opos, sd->total_len,
 			      sd->flags);
 }
+EXPORT_SYMBOL(do_splice_direct);
 
 /**
  * do_splice_direct - splices data directly between two files

@@ -9,6 +9,7 @@ if ANDROID
 
 config ANDROID_BINDER_IPC
 	bool "Android Binder IPC Driver"
+	select SYSVIPC
 	depends on MMU
 	default n
 	---help---
